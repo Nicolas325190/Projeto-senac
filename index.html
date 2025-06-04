@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trio Tech - Manutenção de Computadores em Castro-PR</title>
+    <meta name="description" content="Serviços especializados de manutenção de computadores em Castro-PR. Atendimento rápido, técnicos qualificados e preços justos.">
+    <meta name="keywords" content="manutenção de computadores, assistência técnica, Castro-PR, reparo de computadores, formatação, limpeza de PC">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="content-language" content="pt-BR">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0B3D91',
+                        secondary: '#4285F4',
+                        accent: '#FF5722',
+                        light: '#F5F5F5',
+                        dark: '#212121',
+                    },
+                    fontFamily: {
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                        'opensans': ['Open Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-opensans text-dark bg-light">
+    <!-- Skip to main content link for screen readers -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-primary focus:text-white focus:z-50">
+        Pular para o conteúdo principal
+    </a>
+
+    <!-- Header/Navegação -->
+    <header class="bg-primary text-white sticky top-0 z-50 shadow-md" role="banner">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="#inicio" class="text-2xl font-montserrat font-bold" aria-label="Trio Tech - Página inicial">
+                    Trio<span class="text-accent">Tech</span>
+                </a>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-6" role="navigation" aria-label="Menu principal">
+                <a href="#inicio" class="hover:text-accent transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-primary">Início</a>
+                <a href="#sobre" class="hover:text-accent transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-primary">Sobre</a>
+                <a href="#servicos" class="hover:text-accent transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-primary">Serviços</a>
+                <a href="#depoimentos" class="hover:text-accent transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-primary">Depoimentos</a>
+                <a href="#contato" class="hover:text-accent transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-primary">Contato</a>
+            </nav>
+            
+            <div class="hidden md:flex items-center">
+                <a href="https://wa.me/5542999999999" class="flex items-center bg-accent hover:bg-opacity-90 px-4 py-2 rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-white" aria-label="Contato via WhatsApp: (42) 99999-9999">
+                    <i class="fab fa-whatsapp mr-2" aria-hidden="true"></i> (42) 99999-9999
+                </a>
+            </div>
+            
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white p-2 focus:outline-none focus:ring-2 focus:ring-accent" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu de navegação">
+                    <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Menu Mobile -->
+        <nav id="mobile-menu" class="hidden md:hidden bg-primary" role="navigation" aria-label="Menu mobile">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+                <a href="#inicio" class="hover:text-accent transition-colors focus:outline-none focus:ring-2 focus:ring-accent">Início</a>
+                <a href="#sobre" class="hover:text-accent transition-colors focus:outline-none focus:ring-2 focus:ring-accent">Sobre</a>
+                <a href="#servicos" class="hover:text-accent transition-colors focus:outline-none focus:ring-2 focus:ring-accent">Serviços</a>
+                <a href="#depoimentos" class="hover:text-accent transition-colors focus:outline-none focus:ring-2 focus:ring-accent">Depoimentos</a>
+                <a href="#contato" class="hover:text-accent transition-colors focus:outline-none focus:ring-2 focus:ring-accent">Contato</a>
+                <a href="https://wa.me/5542999999999" class="flex items-center justify-center bg-accent hover:bg-opacity-90 px-4 py-2 rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-white" aria-label="Contato via WhatsApp: (42) 99999-9999">
+                    <i class="fab fa-whatsapp mr-2" aria-hidden="true"></i> (42) 99999-9999
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main id="main-content">
+        <!-- Banner Principal -->
+        <section id="inicio" class="bg-gradient-to-r from-primary to-secondary text-white py-16 md:py-24" aria-labelledby="banner-title">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 id="banner-title" class="text-3xl md:text-5xl font-montserrat font-bold mb-4">Manutenção de Computadores em Castro-PR</h1>
+                    <p class="text-lg md:text-xl mb-8">Soluções rápidas e eficientes para todos os problemas do seu computador. Atendimento local com os melhores técnicos da região.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contato" class="bg-accent hover:bg-opacity-90 text-white font-semibold py-3 px-6 rounded-full text-center transition-all focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary">
+                            Solicitar Orçamento
+                        </a>
+                        <a href="#servicos" class="bg-white text-primary hover:bg-opacity-90 font-semibold py-3 px-6 rounded-full text-center transition-all focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-secondary">
+                            Nossos Serviços
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="img/banner-tecnico.png" alt="Técnico realizando manutenção em computador, trabalhando em uma placa-mãe com ferramentas especializadas" class="rounded-lg shadow-xl max-w-full h-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Nós -->
+        <section id="sobre" class="py-16 bg-white" aria-labelledby="sobre-title">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 id="sobre-title" class="text-3xl font-montserrat font-bold text-primary mb-2">Sobre Nós</h2>
+                    <div class="w-24 h-1 bg-accent mx-auto mb-6" aria-hidden="true"></div>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">Conheça nossa história e compromisso com a qualidade em serviços de tecnologia em Castro-PR.</p>
+                </div>
+                
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="img/equipe-tecnica.png" alt="Nossa equipe técnica de quatro profissionais usando uniformes azuis em um ambiente de trabalho organizado com ferramentas de reparo" class="rounded-lg shadow-lg max-w-full h-auto">
+                    </div>
+                    <div class="md:w-1/2 md:pl-12">
+                        <h3 class="text-2xl font-montserrat font-semibold text-primary mb-4">Excelência em Tecnologia desde 2010</h3>
+                        <p class="mb-4">A Trio Tech nasceu da paixão por tecnologia e do desejo de oferecer serviços de qualidade para a população de Castro e região. Há mais de 13 anos, nossa equipe de técnicos especializados trabalha para solucionar problemas e otimizar o desempenho de computadores, notebooks e equipamentos de informática.</p>
+                        <p class="mb-6">Nossa missão é proporcionar soluções rápidas, eficientes e acessíveis, garantindo a satisfação total dos nossos clientes. Trabalhamos com transparência, explicando cada procedimento realizado e oferecendo orientações para o melhor uso dos equipamentos.</p>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="flex items-start">
+                                <div class="bg-secondary p-2 rounded-full mr-3" aria-hidden="true">
+                                    <i class="fas fa-check text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Técnicos Certificados</h4>
+                                    <p class="text-sm text-gray-600">Equipe com certificações técnicas</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-secondary p-2 rounded-full mr-3" aria-hidden="true">
+                                    <i class="fas fa-clock text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Atendimento Rápido</h4>
+                                    <p class="text-sm text-gray-600">Soluções em até 24h</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-secondary p-2 rounded-full mr-3" aria-hidden="true">
+                                    <i class="fas fa-shield-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Garantia de Serviço</h4>
+                                    <p class="text-sm text-gray-600">Até 90 dias de garantia</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-secondary p-2 rounded-full mr-3" aria-hidden="true">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Atendimento Local</h4>
+                                    <p class="text-sm text-gray-600">Em toda Castro-PR</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Serviços -->
+        <section id="servicos" class="py-16 bg-light" aria-labelledby="servicos-title">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 id="servicos-title" class="text-3xl font-montserrat font-bold text-primary mb-2">Nossos Serviços</h2>
+                    <div class="w-24 h-1 bg-accent mx-auto mb-6" aria-hidden="true"></div>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">Oferecemos soluções completas para todos os problemas do seu computador ou notebook.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Serviço 1 -->
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:transform hover:scale-105 service-card">
+                        <div class="bg-primary p-4 text-center" aria-hidden="true">
+                            <i class="fas fa-tools text-4xl text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-montserrat font-semibold mb-3">Manutenção Preventiva</h3>
+                            <p class="text-gray-600">Evite problemas futuros com nossa manutenção preventiva. Limpeza interna, verificação de componentes e otimização de desempenho.</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Serviço 2 -->
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:transform hover:scale-105 service-card">
+                        <div class="bg-primary p-4 text-center" aria-hidden="true">
+                            <i class="fas fa-microchip text-4xl text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-montserrat font-semibold mb-3">Reparo de Hardware</h3>
+                            <p class="text-gray-600">Conserto de placas, substituição de componentes, upgrade de memória e armazenamento, reparo de telas e teclados.</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Serviço 3 -->
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:transform hover:scale-105 service-card">
+                        <div class="bg-primary p-4 text-center" aria-hidden="true">
+                            <i class="fas fa-laptop-code text-4xl text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-montserrat font-semibold mb-3">Instalação de Software</h3>
+                            <p class="text-gray-600">Instalação de sistemas operacionais, programas, drivers e aplicativos. Configuração e otimização para melhor desempenho.</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Serviço 4 -->
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:transform hover:scale-105 service-card">
+                        <div class="bg-primary p-4 text-center" aria-hidden="true">
+                            <i class="fas fa-shield-virus text-4xl text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-montserrat font-semibold mb-3">Remoção de Vírus</h3>
+                            <p class="text-gray-600">Eliminação de vírus, malware, spyware e outros programas maliciosos. Proteção e prevenção contra novas ameaças.</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Serviço 5 -->
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:transform hover:scale-105 service-card">
+                        <div class="bg-primary p-4 text-center" aria-hidden="true">
+                            <i class="fas fa-database text-4xl text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-montserrat font-semibold mb-3">Recuperação de Dados</h3>
+                            <p class="text-gray-600">Recuperação de arquivos perdidos ou deletados acidentalmente. Resgate de dados de HDs danificados ou corrompidos.</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Serviço 6 -->
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:transform hover:scale-105 service-card">
+                        <div class="bg-primary p-4 text-center" aria-hidden="true">
+                            <i class="fas fa-desktop text-4xl text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-montserrat font-semibold mb-3">Montagem de PCs</h3>
+                            <p class="text-gray-600">Montagem de computadores personalizados de acordo com sua necessidade e orçamento. Seleção das melhores peças.</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Serviço 7 -->
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:transform hover:scale-105 service-card">
+                        <div class="bg-primary p-4 text-center" aria-hidden="true">
+                            <i class="fas fa-network-wired text-4xl text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-montserrat font-semibold mb-3">Redes e Conectividade</h3>
+                            <p class="text-gray-600">Instalação e configuração de redes domésticas e empresariais. Solução de problemas de conexão e internet.</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Serviço 8 -->
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:transform hover:scale-105 service-card">
+                        <div class="bg-primary p-4 text-center" aria-hidden="true">
+                            <i class="fas fa-headset text-4xl text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-montserrat font-semibold mb-3">Consultoria em TI</h3>
+                            <p class="text-gray-600">Orientação para compra de equipamentos, atualização de sistemas e melhores práticas de uso e segurança.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Por Que Nos Escolher -->
+        <section class="py-16 bg-primary text-white" aria-labelledby="escolher-title">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 id="escolher-title" class="text-3xl font-montserrat font-bold mb-2">Por Que Nos Escolher</h2>
+                    <div class="w-24 h-1 bg-accent mx-auto mb-6" aria-hidden="true"></div>
+                    <p class="text-lg max-w-3xl mx-auto">Somos a escolha certa para cuidar dos seus equipamentos de informática em Castro-PR.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="bg-white p-4 rounded-full inline-block mb-4" aria-hidden="true">
+                            <i class="fas fa-medal text-4xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-montserrat font-semibold mb-3">Experiência Comprovada</h3>
+                        <p>Mais de 13 anos de atuação no mercado de Castro-PR, com milhares de clientes satisfeitos.</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="bg-white p-4 rounded-full inline-block mb-4" aria-hidden="true">
+                            <i class="fas fa-bolt text-4xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-montserrat font-semibold mb-3">Agilidade no Atendimento</h3>
+                        <p>Atendimento em até 24 horas, com diagnóstico rápido e soluções eficientes para seu problema.</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="bg-white p-4 rounded-full inline-block mb-4" aria-hidden="true">
+                            <i class="fas fa-hand-holding-usd text-4xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-montserrat font-semibold mb-3">Preço Justo</h3>
+                        <p>Orçamento transparente sem surpresas. Melhor custo-benefício da região de Castro-PR.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Processo de Atendimento -->
+        <section class="py-16 bg-white" aria-labelledby="processo-title">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 id="processo-title" class="text-3xl font-montserrat font-bold text-primary mb-2">Como Funciona</h2>
+                    <div class="w-24 h-1 bg-accent mx-auto mb-6" aria-hidden="true"></div>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">Nosso processo é simples e eficiente para garantir a melhor experiência.</p>
+                </div>
+                
+                <div class="flex flex-col md:flex-row justify-between items-start">
+                    <div class="flex flex-col items-center text-center mb-8 md:mb-0 md:w-1/4">
+                        <div class="bg-secondary text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mb-4" aria-hidden="true">1</div>
+                        <h3 class="text-xl font-montserrat font-semibold text-primary mb-2">Contato</h3>
+                        <p class="text-gray-600">Entre em contato por telefone, WhatsApp ou formulário para relatar seu problema.</p>
+                    </div>
+                    
+                    <div class="hidden md:block w-1/6" aria-hidden="true">
+                        <div class="border-t-4 border-dashed border-secondary h-0 mt-8"></div>
+                    </div>
+                    
+                    <div class="flex flex-col items-center text-center mb-8 md:mb-0 md:w-1/4">
+                        <div class="bg-secondary text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mb-4" aria-hidden="true">2</div>
+                        <h3 class="text-xl font-montserrat font-semibold text-primary mb-2">Diagnóstico</h3>
+                        <p class="text-gray-600">Realizamos uma análise completa para identificar todos os problemas do equipamento.</p>
+                    </div>
+                    
+                    <div class="hidden md:block w-1/6" aria-hidden="true">
+                        <div class="border-t-4 border-dashed border-secondary h-0 mt-8"></div>
+                    </div>
+                    
+                    <div class="flex flex-col items-center text-center md:w-1/4">
+                        <div class="bg-secondary text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mb-4" aria-hidden="true">3</div>
+                        <h3 class="text-xl font-montserrat font-semibold text-primary mb-2">Solução</h3>
+                        <p class="text-gray-600">Executamos os reparos necessários e testamos o funcionamento completo do equipamento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Depoimentos -->
+        <section id="depoimentos" class="py-16 bg-light" aria-labelledby="depoimentos-title">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 id="depoimentos-title" class="text-3xl font-montserrat font-bold text-primary mb-2">O Que Nossos Clientes Dizem</h2>
+                    <div class="w-24 h-1 bg-accent mx-auto mb-6" aria-hidden="true"></div>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">Confira a opinião de quem já utilizou nossos serviços em Castro-PR.</p>
+                </div>
+                
+                <div class="testimonial-slider" role="region" aria-label="Depoimentos de clientes">
+                    <div class="testimonial-container flex flex-nowrap overflow-hidden">
+                        <!-- Depoimento 1 -->
+                        <div class="testimonial-item flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
+                            <div class="bg-white p-6 rounded-lg shadow-lg">
+                                <div class="flex items-center mb-4" aria-label="Avaliação: 5 de 5 estrelas">
+                                    <div class="text-accent">
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <p class="mb-4 italic">"Meu computador da empresa parou de funcionar em um momento crítico. A equipe de manutenção veio até meu estabelecimento em menos de 1 hora e resolveu o problema no mesmo dia. Serviço rápido e de qualidade!"</p>
+                                <div class="flex items-center">
+                                    <img src="img/depoimento1.png" alt="" class="w-12 h-12 rounded-full mr-4" aria-hidden="true">
+                                    <div>
+                                        <h4 class="font-montserrat font-semibold">Carlos Silva</h4>
+                                        <p class="text-sm text-gray-600">Empresário local</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Depoimento 2 -->
+                        <div class="testimonial-item flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
+                            <div class="bg-white p-6 rounded-lg shadow-lg">
+                                <div class="flex items-center mb-4" aria-label="Avaliação: 5 de 5 estrelas">
+                                    <div class="text-accent">
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <p class="mb-4 italic">"Precisei recuperar arquivos importantes que tinha perdido no meu notebook. Pensei que seria impossível, mas conseguiram recuperar tudo! Atendimento excelente e preço justo. Recomendo muito!"</p>
+                                <div class="flex items-center">
+                                    <img src="img/depoimento2.png" alt="" class="w-12 h-12 rounded-full mr-4" aria-hidden="true">
+                                    <div>
+                                        <h4 class="font-montserrat font-semibold">Ana Paula Ferreira</h4>
+                                        <p class="text-sm text-gray-600">Professora</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Depoimento 3 -->
+                        <div class="testimonial-item flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
+                            <div class="bg-white p-6 rounded-lg shadow-lg">
+                                <div class="flex items-center mb-4" aria-label="Avaliação: 5 de 5 estrelas">
+                                    <div class="text-accent">
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <p class="mb-4 italic">"Meu computador estava extremamente lento e travando constantemente. Após a manutenção, ficou como novo! Além disso, me explicaram tudo o que foi feito de forma clara e me deram dicas para manter o desempenho. Profissionais competentes!"</p>
+                                <div class="flex items-center">
+                                    <img src="img/depoimento3.png" alt="" class="w-12 h-12 rounded-full mr-4" aria-hidden="true">
+                                    <div>
+                                        <h4 class="font-montserrat font-semibold">Roberto Mendes</h4>
+                                        <p class="text-sm text-gray-600">Estudante universitário</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Depoimento 4 -->
+                        <div class="testimonial-item flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
+                            <div class="bg-white p-6 rounded-lg shadow-lg">
+                                <div class="flex items-center mb-4" aria-label="Avaliação: 5 de 5 estrelas">
+                                    <div class="text-accent">
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <p class="mb-4 italic">"Como designer, preciso de um computador sempre em perfeito funcionamento. Faço manutenção preventiva regularmente com eles e nunca tive problemas. Atendimento personalizado e conhecimento técnico impressionante!"</p>
+                                <div class="flex items-center">
+                                    <img src="img/depoimento4.png" alt="" class="w-12 h-12 rounded-full mr-4" aria-hidden="true">
+                                    <div>
+                                        <h4 class="font-montserrat font-semibold">Mariana Costa</h4>
+                                        <p class="text-sm text-gray-600">Designer gráfica</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Depoimento 5 -->
+                        <div class="testimonial-item flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
+                            <div class="bg-white p-6 rounded-lg shadow-lg">
+                                <div class="flex items-center mb-4" aria-label="Avaliação: 5 de 5 estrelas">
+                                    <div class="text-accent">
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <p class="mb-4 italic">"Não entendo muito de tecnologia, mas eles foram muito pacientes em me explicar o problema e as soluções. Resolveram rapidamente e ainda me ensinaram algumas dicas básicas. Excelente atendimento para quem não é da área!"</p>
+                                <div class="flex items-center">
+                                    <img src="img/depoimento5.png" alt="" class="w-12 h-12 rounded-full mr-4" aria-hidden="true">
+                                    <div>
+                                        <h4 class="font-montserrat font-semibold">João Pereira</h4>
+                                        <p class="text-sm text-gray-600">Aposentado</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-center mt-8">
+                        <button id="prev-testimonial" class="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center mr-4 hover:bg-secondary transition-colors focus:outline-none focus:ring-2 focus:ring-accent" aria-label="Depoimento anterior">
+                            <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                        </button>
+                        <button id="next-testimonial" class="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-secondary transition-colors focus:outline-none focus:ring-2 focus:ring-accent" aria-label="Próximo depoimento">
+                            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato e Mapa -->
+        <section id="contato" class="py-16 bg-white" aria-labelledby="contato-title">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 id="contato-title" class="text-3xl font-montserrat font-bold text-primary mb-2">Entre em Contato</h2>
+                    <div class="w-24 h-1 bg-accent mx-auto mb-6" aria-hidden="true"></div>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">Estamos prontos para atender você em Castro-PR. Preencha o formulário ou entre em contato pelos nossos canais.</p>
+                </div>
+                
+                <div class="flex flex-col lg:flex-row">
+                    <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
+                        <form id="contact-form" class="bg-light p-8 rounded-lg shadow-lg" aria-labelledby="form-title">
+                            <h3 id="form-title" class="sr-only">Formulário de Contato</h3>
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 font-semibold mb-2">Nome Completo <span class="text-accent">*</span></label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary" required aria-required="true">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 font-semibold mb-2">E-mail <span class="text-accent">*</span></label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary" required aria-required="true">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="phone" class="block text-gray-700 font-semibold mb-2">Telefone/WhatsApp <span class="text-accent">*</span></label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary" required aria-required="true" placeholder="(00) 00000-0000">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="service" class="block text-gray-700 font-semibold mb-2">Serviço Desejado</label>
+                                <select id="service" name="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary">
+                                    <option value="">Selecione um serviço</option>
+                                    <option value="manutencao">Manutenção Preventiva</option>
+                                    <option value="reparo">Reparo de Hardware</option>
+                                    <option value="software">Instalação de Software</option>
+                                    <option value="virus">Remoção de Vírus</option>
+                                    <option value="dados">Recuperação de Dados</option>
+                                    <option value="montagem">Montagem de PCs</option>
+                                    <option value="redes">Redes e Conectividade</option>
+                                    <option value="consultoria">Consultoria em TI</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-semibold mb-2">Descreva seu Problema <span class="text-accent">*</span></label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary" required aria-required="true"></textarea>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <p class="text-sm text-gray-600"><span class="text-accent">*</span> Campos obrigatórios</p>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-accent hover:bg-opacity-90 text-white font-semibold py-3 px-6 rounded-lg transition-all focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2">
+                                Solicitar Orçamento
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="lg:w-1/2 lg:pl-8">
+                        <div class="bg-light p-8 rounded-lg shadow-lg h-full">
+                            <h3 class="text-2xl font-montserrat font-semibold text-primary mb-6">Informações de Contato</h3>
+                            
+                            <div class="mb-6">
+                                <div class="flex items-start mb-4">
+                                    <div class="bg-primary p-2 rounded-full mr-4" aria-hidden="true">
+                                        <i class="fas fa-map-marker-alt text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold">Endereço</h4>
+                                        <p class="text-gray-600">Rua das Tecnologias, 123 - Centro<br>Castro, PR - CEP 84165-000</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start mb-4">
+                                    <div class="bg-primary p-2 rounded-full mr-4" aria-hidden="true">
+                                        <i class="fas fa-phone-alt text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold">Telefone</h4>
+                                        <p class="text-gray-600"><a href="tel:+554232321234" class="hover:text-primary focus:outline-none focus:underline">(42) 3232-1234</a></p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start mb-4">
+                                    <div class="bg-primary p-2 rounded-full mr-4" aria-hidden="true">
+                                        <i class="fab fa-whatsapp text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold">WhatsApp</h4>
+                                        <p class="text-gray-600"><a href="https://wa.me/5542999999999" class="hover:text-primary focus:outline-none focus:underline">(42) 99999-9999</a></p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="bg-primary p-2 rounded-full mr-4" aria-hidden="true">
+                                        <i class="fas fa-envelope text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold">E-mail</h4>
+                                        <p class="text-gray-600"><a href="mailto:contato@triotech.com.br" class="hover:text-primary focus:outline-none focus:underline">contato@triotech.com.br</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <h4 class="font-semibold mb-2">Horário de Funcionamento</h4>
+                            <p class="text-gray-600 mb-6">Segunda a Sexta: 08:00 - 18:00<br>Sábado: 09:00 - 13:00</p>
+                            
+                            <div class="rounded-lg overflow-hidden">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57888.90367128361!2d-50.03245485!3d-24.79134885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e9b1e2a0cfa73f%3A0x4a9a0e0262b6e1c7!2sCastro%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1654321234567!5m2!1spt-BR!2sbr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" title="Localização da Trio Tech em Castro-PR"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12" role="contentinfo">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0 md:w-1/3">
+                    <h3 class="text-2xl font-montserrat font-bold mb-4">Trio<span class="text-accent">Tech</span></h3>
+                    <p class="mb-4">Soluções completas em manutenção de computadores e assistência técnica em Castro-PR. Atendimento personalizado e serviços de qualidade.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-accent transition-colors focus:outline-none focus:ring-2 focus:ring-accent" aria-label="Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-accent transition-colors focus:outline-none focus:ring-2 focus:ring-accent" aria-label="Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-accent transition-colors focus:outline-none focus:ring-2 focus:ring-accent" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-accent transition-colors focus:outline-none focus:ring-2 focus:ring-accent" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="mb-8 md:mb-0 md:w-1/4">
+                    <h4 class="text-xl font-montserrat font-semibold mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="hover:text-accent transition-colors focus:outline-none focus:underline">Início</a></li>
+                        <li><a href="#sobre" class="hover:text-accent transition-colors focus:outline-none focus:underline">Sobre Nós</a></li>
+                        <li><a href="#servicos" class="hover:text-accent transition-colors focus:outline-none focus:underline">Serviços</a></li>
+                        <li><a href="#depoimentos" class="hover:text-accent transition-colors focus:outline-none focus:underline">Depoimentos</a></li>
+                        <li><a href="#contato" class="hover:text-accent transition-colors focus:outline-none focus:underline">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="mb-8 md:mb-0 md:w-1/4">
+                    <h4 class="text-xl font-montserrat font-semibold mb-4">Serviços</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#servicos" class="hover:text-accent transition-colors focus:outline-none focus:underline">Manutenção Preventiva</a></li>
+                        <li><a href="#servicos" class="hover:text-accent transition-colors focus:outline-none focus:underline">Reparo de Hardware</a></li>
+                        <li><a href="#servicos" class="hover:text-accent transition-colors focus:outline-none focus:underline">Instalação de Software</a></li>
+                        <li><a href="#servicos" class="hover:text-accent transition-colors focus:outline-none focus:underline">Remoção de Vírus</a></li>
+                        <li><a href="#servicos" class="hover:text-accent transition-colors focus:outline-none focus:underline">Recuperação de Dados</a></li>
+                    </ul>
+                </div>
+                
+                <div class="md:w-1/6">
+                    <h4 class="text-xl font-montserrat font-semibold mb-4">Contato</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-accent" aria-hidden="true"></i>
+                            <a href="tel:+554232321234" class="hover:text-accent focus:outline-none focus:underline">(42) 3232-1234</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-whatsapp mr-2 text-accent" aria-hidden="true"></i>
+                            <a href="https://wa.me/5542999999999" class="hover:text-accent focus:outline-none focus:underline">(42) 99999-9999</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-accent" aria-hidden="true"></i>
+                            <a href="mailto:contato@triotech.com.br" class="hover:text-accent focus:outline-none focus:underline">contato@triotech.com.br</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2025 Trio Tech - Todos os direitos reservados. | Desenvolvido com <i class="fas fa-heart text-accent" aria-hidden="true"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/5542999999999" class="fixed bottom-6 right-6 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all z-50 focus:outline-none focus:ring-2 focus:ring-green-300" aria-label="Contato via WhatsApp">
+        <i class="fab fa-whatsapp text-2xl" aria-hidden="true"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
