@@ -1,0 +1,109 @@
+/* Estilos personalizados para Trio Tech */
+
+/* Estilos de acessibilidade */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only.focus:not-sr-only {
+  position: fixed;
+  width: auto;
+  height: auto;
+  padding: 0.75rem;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+}
+
+/* Melhorias de foco para acessibilidade */
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+  outline: 2px solid #f8f6f6;
+  outline-offset: 2px;
+}
+
+/* Carrossel de depoimentos */
+.testimonial-container {
+  transition: transform 0.5s ease;
+}
+
+.testimonial-item {
+  min-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .testimonial-item {
+    min-width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonial-item {
+    min-width: 33.333%;
+  }
+}
+
+/* Animações suaves */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(255, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Melhorias de contraste */
+.text-gray-600 {
+  color: #4B5563; /* Melhor contraste do que o cinza padrão */
+}
+
+/* Estilos para formulários acessíveis */
+input:focus-visible, 
+select:focus-visible, 
+textarea:focus-visible {
+  outline: 2px solid #0cfc03;
+  border-color: #7bff00;
+}
+
+/* Indicador de campos obrigatórios */
+.text-accent {
+  color: #1aa169;
+}
+
+/* Melhorias para modo de alto contraste */
+@media (forced-colors: active) {
+  .bg-primary, .bg-secondary, .bg-accent {
+    background-color: ButtonFace;
+    border: 1px solid ButtonText;
+  }
+  
+  .text-white, .text-primary, .text-accent {
+    color: ButtonText;
+  }
+}
+
+/* Suporte para preferências de movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .testimonial-container {
+    transition: none;
+  }
+}
